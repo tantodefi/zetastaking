@@ -206,10 +206,15 @@ npx hardhat set-withdraw --contract 0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31 -
 🚀 Successfully broadcasted a token transfer transaction on mumbai_testnet network.
 📝 Transaction hash: 0x29e343516607ea28a636e5f2ad9deeed4ae62f9febd7bdf2a9442903c91411da
 
-TODOS:
-Stake Tokens
-npx hardhat stake --amount 0.1 --contract ADDRESS --network mumbai_testnet
 
+npx hardhat stake --amount 0.01 --contract 0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31 --network mumbai_testnet
+🔑 Using account: 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147
+
+
+🚀 Successfully broadcasted a token transfer transaction on mumbai_testnet network.
+📝 Transaction hash: 0x44850a91f7c52b121c2faa5e6d63bcc23bd7229156ceb0dd79f458e945a7aa7a
+
+TODOS:
 Unstake Tokens
 npx hardhat unstake --contract ADDRESS --network mumbai_testnet
 
@@ -226,7 +231,7 @@ npx hardhat address tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
 Encoded: 0x7462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376d
 context.origin: 0x7462317170366b7835726a71666c3672656c7437
 
-npx hardhat send-btc --memo 0aE7cf3B6D7321e6f7bb9f241C2C51c5701D514703 --amount 0.0 --recipient tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
+npx hardhat send-btc --memo 11af51687b2FBb9daacC893CfBE2690b60b5cB9B03 --amount 0.0 --recipient tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
 An unexpected error occurred:
 
 Error: Not enough funds
