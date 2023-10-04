@@ -181,3 +181,53 @@ npx hardhat send-btc --amount 1 --recipient TSS_ADDRESS --memo RECIPIENT_ADDRESS
 To learn more about building decentralized apps on ZetaChain, follow the
 tutorials available in
 [the documentation](https://www.zetachain.com/docs/developers/overview/).
+
+NOTES: taken from https://www.zetachain.com/docs/developers/omnichain/tutorials/staking/
+
+DEPLOYED ON MUMBAI:
+npx hardhat deploy --network zeta_testnet --chain mumbai_testnet
+🔑 Using account: 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147
+
+🚀 Successfully deployed contract on ZetaChain.
+📜 Contract address: 0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31
+🌍 Explorer: https://athens3.explorer.zetachain.com/address/0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31
+
+npx hardhat set-beneficiary 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147 --contract 0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31 --network mumbai_testnet
+🔑 Using account: 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147
+
+
+🚀 Successfully broadcasted a token transfer transaction on mumbai_testnet network.
+📝 Transaction hash: 0xeb2b9a18e7f746dc56d48c661c522d10d26e74da82c775963b7cd968c92887e5
+
+npx hardhat set-withdraw --contract 0xCb862Af242d65AF1d2c33B3B68234f9E4D58Bf31 --network mumbai_testnet
+🔑 Using account: 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147
+
+
+🚀 Successfully broadcasted a token transfer transaction on mumbai_testnet network.
+📝 Transaction hash: 0x29e343516607ea28a636e5f2ad9deeed4ae62f9febd7bdf2a9442903c91411da
+
+TODOS:
+Stake Tokens
+npx hardhat stake --amount 0.1 --contract ADDRESS --network mumbai_testnet
+
+Unstake Tokens
+npx hardhat unstake --contract ADDRESS --network mumbai_testnet
+
+DEPLOYED ON BTC_TESTNET
+
+npx hardhat deploy --network zeta_testnet --chain btc_testnet
+🔑 Using account: 0x0aE7cf3B6D7321e6f7bb9f241C2C51c5701D5147
+
+🚀 Successfully deployed contract on ZetaChain.
+📜 Contract address: 0x11af51687b2FBb9daacC893CfBE2690b60b5cB9B
+🌍 Explorer: https://athens3.explorer.zetachain.com/address/0x11af51687b2FBb9daacC893CfBE2690b60b5cB9B
+
+npx hardhat address tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
+Encoded: 0x7462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376d
+context.origin: 0x7462317170366b7835726a71666c3672656c7437
+
+npx hardhat send-btc --memo 0aE7cf3B6D7321e6f7bb9f241C2C51c5701D514703 --amount 0.0 --recipient tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
+An unexpected error occurred:
+
+Error: Not enough funds
+
