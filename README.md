@@ -232,7 +232,197 @@ Encoded: 0x7462317170366b7835726a71666c3672656c743777716739336a776337397138387a3
 context.origin: 0x7462317170366b7835726a71666c3672656c7437
 
 npx hardhat send-btc --memo 11af51687b2FBb9daacC893CfBE2690b60b5cB9B03 --amount 0.0 --recipient tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
-An unexpected error occurred:
 
-Error: Not enough funds
+Transaction:
 
+02000000000102e6b76b8be1feb6190b4d3f32a1a5d2e0cc175ab93762ad8fbdf3e015ecf7dd4b0000000000ffffffff0435e58cd4de0f8a765b47f5d9325b1dee0798adb5db268c77937a781522700e0100000000ffffffff0300000000000000001600140eac6a0e404ff43cfd7e701058c9d8f1407388a30000000000000000176a1511af51687b2fbb9daacc893cfbe2690b60b5cb9b0370170000000000001600140eac6a0e404ff43cfd7e701058c9d8f1407388a302483045022100bde66ea7e9f5f66539028f54b49ef47436b0b4326d6f72e1d6e2377a48f4e51e022023671a44ee597e61ff86ee2f1642325e1a99d4b3af88d1a1e338c392a12f8cd3012103c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb102902483045022100aeb3af68b7b9d36cea7c066f0072f1c7a2e84ecdb6989082cc02b33a5e313174022017c76e5f5ab64518a0c4c2e85b9bbf32e4ad9d2e6c5f5f3ee6b75fe1231154af012103c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb102900000000
+
+Decoded transaction:
+
+{
+  "block_height": -1,
+  "block_index": -1,
+  "hash": "9141c73a807bb5e5e8884662e1271c50a3b75f40faae6cf6bfdba4eb96f2954e",
+  "addresses": [
+    "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+  ],
+  "total": 6000,
+  "fees": 10000,
+  "size": 404,
+  "vsize": 241,
+  "preference": "low",
+  "relayed_by": "204.83.229.94",
+  "received": "2023-10-05T22:05:35.601550239Z",
+  "ver": 2,
+  "double_spend": false,
+  "vin_sz": 2,
+  "vout_sz": 3,
+  "data_protocol": "unknown",
+  "confirmations": 0,
+  "inputs": [
+    {
+      "prev_hash": "4bddf7ec15e0f3bd8fad6237b95a17cce0d2a5a1323f4d0b19b6fee18b6bb7e6",
+      "output_index": 0,
+      "output_value": 8000,
+      "sequence": 4294967295,
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash",
+      "age": 2530378,
+      "witness": [
+        "3045022100bde66ea7e9f5f66539028f54b49ef47436b0b4326d6f72e1d6e2377a48f4e51e022023671a44ee597e61ff86ee2f1642325e1a99d4b3af88d1a1e338c392a12f8cd301",
+        "03c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029"
+      ]
+    },
+    {
+      "prev_hash": "0e702215787a93778c26dbb5ad9807ee1d5b32d9f5475b768a0fded48ce53504",
+      "output_index": 1,
+      "output_value": 8000,
+      "sequence": 4294967295,
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash",
+      "age": 2504626,
+      "witness": [
+        "3045022100aeb3af68b7b9d36cea7c066f0072f1c7a2e84ecdb6989082cc02b33a5e313174022017c76e5f5ab64518a0c4c2e85b9bbf32e4ad9d2e6c5f5f3ee6b75fe1231154af01",
+        "03c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "value": 0,
+      "script": "00140eac6a0e404ff43cfd7e701058c9d8f1407388a3",
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash"
+    },
+    {
+      "value": 0,
+      "script": "6a1511af51687b2fbb9daacc893cfbe2690b60b5cb9b03",
+      "addresses": null,
+      "script_type": "null-data",
+      "data_hex": "11af51687b2fbb9daacc893cfbe2690b60b5cb9b03"
+    },
+    {
+      "value": 6000,
+      "script": "00140eac6a0e404ff43cfd7e701058c9d8f1407388a3",
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash"
+    }
+  ]
+}
+
+Transaction hash: 9141c73a807bb5e5e8884662e1271c50a3b75f40faae6cf6bfdba4eb96f2954e
+
+npx hardhat send-btc --memo 11af51687b2FBb9daacC893CfBE2690b60b5cB9B047462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376d --amount 0.0 --recipient tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m
+
+Transaction:
+
+020000000001034e95f296eba4dbbff66caefa405fb7a3501c27e1624688e8e5b57b803ac741910000000000ffffffff4e95f296eba4dbbff66caefa405fb7a3501c27e1624688e8e5b57b803ac741910200000000ffffffff812db456aa8a019d1415094b1e910261b5086e5b33d69cde21c43c7c12de6b0d0100000000ffffffff0300000000000000001600140eac6a0e404ff43cfd7e701058c9d8f1407388a30000000000000000416a3f11af51687b2fbb9daacc893cfbe2690b60b5cb9b047462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376da00f0000000000001600140eac6a0e404ff43cfd7e701058c9d8f1407388a30248304502210087b93d2835d687ca9b8c10366c3305ec40369df9695c917f5e0b41179d228a3a0220095be958a2c229a8efec95f7251e45eb6840257c52a9622e0f31ed98b1eef302012103c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029024730440220490d748d0e8f681dc094f24c148e922b64324da3f16befc610926914711cc5720220325249074ed27b7fc90e2328fdd440f98d16bab57a1b28fb7d1574e199272da7012103c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029024830450221009f09aabab4b3a9514a795e6a2038807f3bb7d47911b135517dcb6f505b5085b7022020ae49a7e21b748109de8e5b12e89653564b1597ca1c6c3b18f7d0abc67873a7012103c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb102900000000
+
+Decoded transaction:
+
+{
+  "block_height": -1,
+  "block_index": -1,
+  "hash": "31f48f934fac0d2735151b054d69d1e14651093901be192f51e2a614bcb41375",
+  "addresses": [
+    "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+  ],
+  "total": 4000,
+  "fees": 10000,
+  "size": 594,
+  "vsize": 351,
+  "preference": "low",
+  "relayed_by": "204.83.229.94",
+  "received": "2023-10-05T22:10:55.193760691Z",
+  "ver": 2,
+  "double_spend": false,
+  "vin_sz": 3,
+  "vout_sz": 3,
+  "data_protocol": "unknown",
+  "confirmations": 0,
+  "inputs": [
+    {
+      "prev_hash": "9141c73a807bb5e5e8884662e1271c50a3b75f40faae6cf6bfdba4eb96f2954e",
+      "output_index": 0,
+      "sequence": 4294967295,
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash",
+      "age": 2530379,
+      "witness": [
+        "304502210087b93d2835d687ca9b8c10366c3305ec40369df9695c917f5e0b41179d228a3a0220095be958a2c229a8efec95f7251e45eb6840257c52a9622e0f31ed98b1eef30201",
+        "03c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029"
+      ]
+    },
+    {
+      "prev_hash": "9141c73a807bb5e5e8884662e1271c50a3b75f40faae6cf6bfdba4eb96f2954e",
+      "output_index": 2,
+      "output_value": 6000,
+      "sequence": 4294967295,
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash",
+      "age": 2530379,
+      "witness": [
+        "30440220490d748d0e8f681dc094f24c148e922b64324da3f16befc610926914711cc5720220325249074ed27b7fc90e2328fdd440f98d16bab57a1b28fb7d1574e199272da701",
+        "03c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029"
+      ]
+    },
+    {
+      "prev_hash": "0d6bde127c3cc421de9cd6335b6e08b56102911e4b0915149d018aaa56b42d81",
+      "output_index": 1,
+      "output_value": 8000,
+      "sequence": 4294967295,
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash",
+      "age": 2530347,
+      "witness": [
+        "30450221009f09aabab4b3a9514a795e6a2038807f3bb7d47911b135517dcb6f505b5085b7022020ae49a7e21b748109de8e5b12e89653564b1597ca1c6c3b18f7d0abc67873a701",
+        "03c1e35408b65f784d01d931ded8f593381970c247d0c435c1acdca6373bfb1029"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "value": 0,
+      "script": "00140eac6a0e404ff43cfd7e701058c9d8f1407388a3",
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash"
+    },
+    {
+      "value": 0,
+      "script": "6a3f11af51687b2fbb9daacc893cfbe2690b60b5cb9b047462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376d",
+      "addresses": null,
+      "script_type": "null-data",
+      "data_hex": "11af51687b2fbb9daacc893cfbe2690b60b5cb9b047462317170366b7835726a71666c3672656c743777716739336a776337397138387a39726634686d376d"
+    },
+    {
+      "value": 4000,
+      "script": "00140eac6a0e404ff43cfd7e701058c9d8f1407388a3",
+      "addresses": [
+        "tb1qp6kx5rjqfl6relt7wqg93jwc79q88z9rf4hm7m"
+      ],
+      "script_type": "pay-to-witness-pubkey-hash"
+    }
+  ]
+}
+
+Transaction hash: 31f48f934fac0d2735151b054d69d1e14651093901be192f51e2a614bcb41375
+
+npx hardhat verify:zeta --contract 0x11af51687b2FBb9daacC893CfBE2690b60b5cB9B
+? Select a contract to verify: contracts/Staking.sol:Staking
+✅ Contract verified: https://athens3.explorer.zetachain.com/address/0x11af51687b2FBb9daacC893CfBE2690b60b5cB9B
